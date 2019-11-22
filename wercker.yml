@@ -30,7 +30,7 @@ build:
     - script:
         name: go get
         code: |
-          go get
+          go get github.com/domiemon/go_web_system
 
     # Build the project
     - script:
