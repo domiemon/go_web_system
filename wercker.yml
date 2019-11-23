@@ -43,3 +43,10 @@ build:
         name: go test
         code: |
           go test ./...
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $DOCKER_HUB_USER
+        password: $DOCKER_HUB_PASS
+        tag: latest
+        repository: domiemon/go-web-system
