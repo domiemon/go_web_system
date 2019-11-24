@@ -45,8 +45,15 @@ build:
           go test ./...
 deploy:
   steps:
+    # - internal/docker-push:
+    #    username: $DOCKER_HUB_USER
+    #    password: $DOCKER_HUB_PASS
+    #    tag: latest
+    #    repository: domiemon/go-web-system
     - internal/docker-push:
-        username: $DOCKER_HUB_USER
-        password: $DOCKER_HUB_PASS
-        tag: latest
-        repository: domiemon/go-web-system
+      aws-access-key: $AWS_ACCESS_KEY_ID
+      aws-secret-key: $AWS_SECRET_ACCESS_KEY
+      aws-region: us-east-2
+      aws-registry-id: $AWS_REGISTRY_ID
+      repository: go-web-system
+      tag: $WERCKER_GIT_BRANCH
