@@ -51,9 +51,10 @@ deploy:
     #    tag: latest
     #    repository: domiemon/go-web-system
     - internal/docker-push:
-      aws-access-key: $AWS_ACCESS_KEY_ID
-      aws-secret-key: $AWS_SECRET_ACCESS_KEY
+      aws-access-key: $X_AWS_ACCESS_KEY_ID
+      aws-secret-key: $X_AWS_SECRET_ACCESS_KEY
       aws-region: us-east-2
-      aws-registry-id: $AWS_REGISTRY_ID
+      aws-registry-id: $X_AWS_REGISTRY_ID
+      aws-registry-url: $X_AWS_REGISTRY_URL
       repository: go-web-system
       tag: $WERCKER_GIT_BRANCH
