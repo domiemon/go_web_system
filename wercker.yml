@@ -65,7 +65,7 @@ deploy:
     - script:
       name: run
       code: |
-        $WERCKER_SOURCE_DIR/run.sh
+        sudo $WERCKER_SOURCE_DIR/run.sh
     #- deploy/aws-ecs:
     #  key: $X_AWS_ACCESS_KEY_ID
     #  secret: $X_AWS_SECRET_ACCESS_KEY
