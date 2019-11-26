@@ -64,5 +64,5 @@ deploy:
       secret: $X_AWS_SECRET_ACCESS_KEY
       cluster-name: go-web-wercker-demo-cluster
       service-name: go-web-wercker-demo-service
-      task-definition-name: go-web-wercker-demo-task-definition
-      task-definition-file: $WERCKER_SOURCE_DIR/go-web-wercker-demo-task-definition.json
+    #  task-definition-name: go-web-wercker-demo-task-definition
+    #  task-definition-file: $WERCKER_SOURCE_DIR/go-web-wercker-demo-task-definition.json
