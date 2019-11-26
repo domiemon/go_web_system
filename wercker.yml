@@ -63,9 +63,9 @@ deploy:
   box: python:2.7-slim
   steps:
     - script:
-      name: run
+      name: run deploy
       code: |
-        sudo $WERCKER_SOURCE_DIR/run.sh
+        ./run.sh
     #- deploy/aws-ecs:
     #  key: $X_AWS_ACCESS_KEY_ID
     #  secret: $X_AWS_SECRET_ACCESS_KEY

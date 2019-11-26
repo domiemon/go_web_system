@@ -1,8 +1,4 @@
 #!/bin/sh
-
-echo "Hello"
-exit
-
 set +e
 set -o noglob
 
