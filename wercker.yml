@@ -44,7 +44,7 @@ build:
         code: |
           go test ./...
 deploy:
-  # box: golang
+  box: golang
   steps:
     # - internal/docker-push:
     #    username: $DOCKER_HUB_USER
