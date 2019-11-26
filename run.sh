@@ -1,6 +1,6 @@
 #!/bin/sh
-set +e
-set -o noglob
+#set +e
+#set -o noglob
 
 #
 # Headers and Logging
