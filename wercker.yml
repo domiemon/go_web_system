@@ -62,7 +62,7 @@ deploy:
     - science/aws-ecs:
       key: $X_AWS_ACCESS_KEY_ID
       secret: $X_AWS_SECRET_ACCESS_KEY
-      cluster-name: go-web-wercker-demo-cluster
-      service-name: go-web-wercker-demo-service
+    #  cluster-name: go-web-wercker-demo-cluster
+    #  service-name: go-web-wercker-demo-service
     #  task-definition-name: go-web-wercker-demo-task-definition
     #  task-definition-file: $WERCKER_SOURCE_DIR/go-web-wercker-demo-task-definition.json
