@@ -8,7 +8,8 @@
       "entryPoint": [
         "sh",
         "-c",
-        "make start"
+        "make",
+        "start"
       ],
       "portMappings": [
         {
@@ -49,7 +50,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "go-web-system-wercker-container"
+      "name": "go-web-wercker-demo-container"
     }
   ],
   "placementConstraints": [],
@@ -58,8 +59,8 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:408210612772:task-definition/go-web-system-wercker-task-definition:1",
-  "family": "go-web-system-wercker-task-definition",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:408210612772:task-definition/go-web-wercker-demo-task-definition:1",
+  "family": "go-web-wercker-demo-task-definition",
   "requiresAttributes": [
     {
       "targetId": null,
