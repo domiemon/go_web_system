@@ -1,6 +1,10 @@
 #!/bin/sh
-#set +e
-#set -o noglob
+
+echo "Hello"
+exit
+
+set +e
+set -o noglob
 
 #
 # Headers and Logging
