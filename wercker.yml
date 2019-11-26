@@ -59,10 +59,10 @@ deploy:
       aws-registry-url: $X_AWS_REGISTRY_URL
       repository: go-web-system
       tag: $WERCKER_GIT_BRANCH
-    # - science/aws-ecs:
-    #  key: $X_AWS_ACCESS_KEY_ID
-    #  secret: $X_AWS_SECRET_ACCESS_KEY
-    #  cluster-name: go-web-wercker-demo-cluster
-    #  service-name: go-web-wercker-demo-service
-    #  task-definition-name: go-web-wercker-demo-task-definition
-    #  task-definition-file: $WERCKER_SOURCE_DIR/go-web-wercker-demo-task-definition.json
+    - deploy/aws-ecs:
+      key: $X_AWS_ACCESS_KEY_ID
+      secret: $X_AWS_SECRET_ACCESS_KEY
+      cluster-name: go-web-wercker-demo-cluster
+      service-name: go-web-wercker-demo-service
+      task-definition-name: go-web-wercker-demo-task-definition
+      task-definition-file: $WERCKER_SOURCE_DIR/go-web-wercker-demo-task-definition.json
