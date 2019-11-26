@@ -60,6 +60,7 @@ ecr-push:
       repository: go-web-system
       tag: $WERCKER_GIT_BRANCH
 deploy:
+  box: python:2.7-slim
   steps:
     - script:
       name: run
