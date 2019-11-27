@@ -48,8 +48,7 @@ class ECSService(object):
             raise IOError('The task definition file does not exist')
 
         with open(file, 'r') as content_file:
-            container_definitions = json.loads(content_file.read())
-            print container_definitions
+            container_definitions = json.loads(content_file.read())['containerDefinitions']
 
         response = self.client.register_task_definition(family=family, containerDefinitions=container_definitions)
         task_definition = response.get('taskDefinition')
