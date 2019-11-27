@@ -49,6 +49,7 @@ class ECSService(object):
 
         with open(file, 'r') as content_file:
             container_definitions = json.loads(content_file.read())['containerDefinitions']
+            print container_definitions
 
         response = self.client.register_task_definition(family=family, containerDefinitions=container_definitions)
         task_definition = response.get('taskDefinition')
