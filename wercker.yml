@@ -51,6 +51,9 @@ ecr-push:
     #    password: $DOCKER_HUB_PASS
     #    tag: latest
     #    repository: domiemon/go-web-system
+    - internal/docker-build:
+      dockerfile: Dockerfile
+      image-name: go-web-system
     - internal/docker-push:
       aws-access-key: $X_AWS_ACCESS_KEY_ID
       aws-secret-key: $X_AWS_SECRET_ACCESS_KEY
