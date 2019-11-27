@@ -62,14 +62,14 @@ ecr-push:
 deploy:
   box: python:2.7-slim
   steps:
-    # - script:
-    #  name: run deploy
-    #  code: |
-    #    ./run2.sh
-    - deploy/aws-ecs:
-      key: $X_AWS_ACCESS_KEY_ID
-      secret: $X_AWS_SECRET_ACCESS_KEY
-      cluster-name: go-web-wercker-demo-cluster
-      service-name: go-web-wercker-demo-service2
-      task-definition-name: go-web-wercker-demo-task-definition
-      task-definition-file: $WERCKER_SOURCE_DIR/go-web-wercker-demo-task-definition.json
+    - script:
+      name: run deploy
+      code: |
+        run2.sh
+    #- deploy/aws-ecs:
+    #  key: $X_AWS_ACCESS_KEY_ID
+    #  secret: $X_AWS_SECRET_ACCESS_KEY
+    #  cluster-name: go-web-wercker-demo-cluster
+    #  service-name: go-web-wercker-demo-service2
+    #  task-definition-name: go-web-wercker-demo-task-definition
+    #  task-definition-file: $WERCKER_SOURCE_DIR/go-web-wercker-demo-task-definition.json

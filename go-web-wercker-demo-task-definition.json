@@ -59,7 +59,7 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:408210612772:task-definition/go-web-wercker-demo-task-definition:2",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:408210612772:task-definition/go-web-wercker-demo-task-definition:4",
   "family": "go-web-wercker-demo-task-definition",
   "requiresAttributes": [
     {
@@ -75,7 +75,7 @@
   ],
   "networkMode": null,
   "cpu": null,
-  "revision": 2,
+  "revision": 4,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
