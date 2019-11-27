@@ -57,7 +57,7 @@ ecr-push:
     - internal/docker-push:
       aws-access-key: $X_AWS_ACCESS_KEY_ID
       aws-secret-key: $X_AWS_SECRET_ACCESS_KEY
-      aws-region: us-east-2
+      aws-region: $X_AWS_REGION
       aws-registry-id: $X_AWS_REGISTRY_ID
       aws-registry-url: $X_AWS_REGISTRY_URL
       repository: go-web-system
