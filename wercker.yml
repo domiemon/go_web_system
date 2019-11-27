@@ -65,7 +65,7 @@ deploy:
     - script:
       name: run deploy
       code: |
-        ls && chmod 0777 run2.sh && /bin/sh run2.sh
+        ls && chmod 0777 test_run.sh && /bin/sh test_run.sh
     #- deploy/aws-ecs:
     #  key: $X_AWS_ACCESS_KEY_ID
     #  secret: $X_AWS_SECRET_ACCESS_KEY
