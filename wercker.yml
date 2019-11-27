@@ -55,6 +55,7 @@ ecr-push:
       dockerfile: Dockerfile
       image-name: go-web-system
     - internal/docker-push:
+      image-name: go-web-system
       aws-access-key: $X_AWS_ACCESS_KEY_ID
       aws-secret-key: $X_AWS_SECRET_ACCESS_KEY
       aws-region: $X_AWS_REGION
