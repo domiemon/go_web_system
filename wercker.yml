@@ -65,7 +65,7 @@ deploy:
     - script:
       name: run deploy
       code: |
-        run2.sh
+        ./run2.sh
     #- deploy/aws-ecs:
     #  key: $X_AWS_ACCESS_KEY_ID
     #  secret: $X_AWS_SECRET_ACCESS_KEY
