@@ -86,14 +86,8 @@ class ECSService(object):
         running_count = (response.get('services')[0]).get('runningCount')
         task_definition = (response.get('services')[0]).get('taskDefinition')
         desired_count = running_count + delta
-        try:
-            return self.update_service(cluster=cluster, service=service, taskDefinition=task_definition,
+        return self.update_service(cluster=cluster, service=service, taskDefinition=task_definition,
                                    desiredCount=desired_count)
-        except Exception as x:
-            print x
-            raise x
-        # return self.update_service(cluster=cluster, service=service, taskDefinition=task_definition,
-        #                           desiredCount=desired_count)
 
     def update_service(self, cluster, service, taskDefinition, desiredCount=None):
         """
