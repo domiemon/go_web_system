@@ -74,11 +74,15 @@ try:
         success("Updating service '%s' with task definition '%s' succeeded" % (args.service_name, task_definition_arn))
 
         # Step: Upscale ECS Service
-        # h1("Step: Upscale ECS Service")
+        h1("Step: Upscale ECS Service")
         # response = ecs.upscale_service(cluster=args.cluster_name, service=args.service_name, delta=delta)
         # upscale_running_count = (response.get('services')[0]).get('runningCount')
         # success("Upscaling service '%s' (from %d to %d tasks) succeeded"
-        #        % (args.service_name, running_count, upscale_running_count))
+        #         % (args.service_name, running_count, upscale_running_count))
+        response = ecs.upscale_service(cluster=args.cluster_name, service=args.service_name, delta=delta)
+        upscale_running_count = running_count + delta
+        success("Upscaling service '%s' (from %d to %d tasks) succeeded"
+            % (args.service_name, running_count, upscale_running_count))
     else:
         # Step: run task
         h1("Step: Run task")
