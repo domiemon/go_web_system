@@ -10,4 +10,4 @@ WORKDIR /go-web-system
 
 EXPOSE 8080/tcp
 
-ENTRYPOINT go build . && go run main.go
+ENTRYPOINT pwd && ls -ag && go build . && go run main.go
