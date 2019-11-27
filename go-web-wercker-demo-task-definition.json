@@ -1,11 +1,7 @@
 {
-  "ipcMode": null,
-  "executionRoleArn": null,
-  "containerDefinitions": [
-    {
-      "dnsSearchDomains": null,
-      "logConfiguration": null,
-      "entryPoint": null,
+      "dnsSearchDomains": [],
+      "logConfiguration": {},
+      "entryPoint": [],
       "portMappings": [
         {
           "hostPort": 80,
@@ -18,66 +14,37 @@
           "containerPort": 8080
         }
       ],
-      "command": null,
-      "linuxParameters": null,
+      "command": [],
+      "linuxParameters": {},
       "cpu": 0,
       "environment": [],
-      "resourceRequirements": null,
-      "ulimits": null,
-      "dnsServers": null,
+      "resourceRequirements": [],
+      "ulimits": [],
+      "dnsServers": [],
       "mountPoints": [],
-      "workingDirectory": null,
-      "secrets": null,
-      "dockerSecurityOptions": null,
+      "workingDirectory": "",
+      "secrets": [],
+      "dockerSecurityOptions": [],
       "memory": 256,
-      "memoryReservation": null,
+      "memoryReservation": 0,
       "volumesFrom": [],
-      "stopTimeout": null,
+      "stopTimeout": 0,
       "image": "408210612772.dkr.ecr.us-east-2.amazonaws.com/go-web-system:master",
-      "startTimeout": null,
+      "startTimeout": 0,
       "firelensConfiguration": {},
-      "dependsOn": null,
-      "disableNetworking": null,
-      "interactive": null,
+      "dependsOn": [],
+      "disableNetworking": false,
+      "interactive": false,
       "healthCheck": null,
       "essential": true,
       "links": [],
       "hostname": "",
-      "extraHosts": null,
-      "pseudoTerminal": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "systemControls": null,
-      "privileged": null,
+      "extraHosts": [],
+      "pseudoTerminal": false,
+      "user": "",
+      "readonlyRootFilesystem": false,
+      "dockerLabels": {},
+      "systemControls": [],
+      "privileged": false,
       "name": "go-web-wercker-demo-container"
-    }
-  ],
-  "placementConstraints": [],
-  "memory": null,
-  "taskRoleArn": null,
-  "compatibilities": [
-    "EC2"
-  ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:408210612772:task-definition/go-web-wercker-demo-task-definition:4",
-  "family": "go-web-wercker-demo-task-definition",
-  "requiresAttributes": [
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
-    }
-  ],
-  "pidMode": null,
-  "requiresCompatibilities": [
-    "EC2"
-  ],
-  "networkMode": null,
-  "cpu": null,
-  "revision": 4,
-  "status": "ACTIVE",
-  "inferenceAccelerators": null,
-  "proxyConfiguration": null,
-  "volumes": []
 }
